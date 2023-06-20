@@ -16,7 +16,9 @@ export default function RootLayout({ children }) {
                     <Header />
 
                     {/* NAVBAR */}
+
                     {/* SEARCH BOV */}
+
                     {children}
                 </Providers>
             </body>
