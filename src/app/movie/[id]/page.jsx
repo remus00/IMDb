@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FiThumbsUp } from "react-icons/fi";
 
 async function getMovie(movieId) {
     const res = await fetch(
@@ -41,9 +42,10 @@ export default async function MoviePage({ params }) {
                         {movie.release_date || movie.first_air_date}
                     </p>
 
-                    <p className="mb-3">
-                        <span className="font-semibold mr-1">Rating: </span>
+                    <p className="mb-3 flex items-center">
+                        <span className="font-semibold mr-3">Rating: </span>
                         {movie.vote_count}
+                        <FiThumbsUp className="h-5 ml-2" />{" "}
                     </p>
                 </div>
             </div>
