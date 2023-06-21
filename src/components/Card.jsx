@@ -15,7 +15,7 @@ const Card = ({ result }) => {
                     height={300}
                     className="sm:rounded-t-lg group-hover:opacity-80 transition-opacity duration-200"
                     placeholder="blur"
-                    blurDataURL="spinner.svg"
+                    blurDataURL="/spinner.svg"
                     alt="Image is not available"
                     style={{ maxWidth: "100%", height: "auto" }}
                 />
